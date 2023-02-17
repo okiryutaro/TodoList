@@ -1,0 +1,355 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: none;
+font-style: normal;
+text-align: left;
+zoom: 1;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+table {
+border-collapse: collapse;
+font-family: inherit;
+}
+h1,h2,h3,h4,h5 {
+font-size: 100%;
+font-weight: normal;
+line-height: 1;
+}
+input,textarea,select {
+font-family: inherit;
+font-size: 16px;
+}
+input[type="button"],input[type="text"],input[type="submit"] {
+/* -webkit-appearance: none; */
+border-radius: 0;
+}
+textarea {
+resize: none;
+/* -webkit-appearance: none; */
+border-radius: 0;
+}
+th,td {
+border-collapse: collapse;
+}
+table th,table td {
+white-space: nowrap;
+}
+ul,ol {
+list-style-type: none;
+}
+img {
+vertical-align: text-bottom;
+vertical-align: -webkit-baseline-middle;
+max-width: 100%;
+height: auto;
+width /***/:auto;
+}
+body{
+    text-align: center;
+    background-color: rgb(212, 248, 236);
+}
+header{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+header p{
+    font-size: 20px;
+    text-align: right;
+}
+main{
+    width: 100%;
+    height: 950px;
+    margin: auto;
+}
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;/*rem算出をしやすくするために*/
+}
+
+.btn,
+a.btn,
+button.btn {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+    border-radius: 0.5rem;
+}
+button.btn--red.btn--cubic {
+    color: white;
+    border-bottom: 5px solid #9f000c;
+    background-color:#f52234
+}
+
+button.btn--red.btn--cubic:hover {
+    margin-top: 3px;
+    border-bottom: 2px solid #9f000c;
+}
+
+button.btn--radius {
+    border-radius: 100vh;
+}
+
+.fa-position-right {
+    position: absolute;
+    top: calc(50% - .5em);
+    right: 1rem;
+}
+ul{
+    width: 800px;
+    margin: auto;
+    background-color: rgb(251, 251, 254);
+}
+ul p:first-child{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(7, 166, 142)
+}
+.ECM_CheckboxInput {
+    padding: 12px 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    }
+    .ECM_CheckboxInput-Input {
+    margin: 0;
+    width: 0;
+    opacity: 0;
+    }
+    .ECM_CheckboxInput:hover{
+    background: rgba(0,0,0,.05) !important;
+    }
+    .ECM_CheckboxInput:hover > .ECM_CheckboxInput-DummyInput{
+    transform: scale(1.1);
+    }
+    .ECM_CheckboxInput-Input:focus + .ECM_CheckboxInput-DummyInput{
+    transform: scale(1.1);
+    }
+    .ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput {
+    background: rgba(107, 26, 250, 1);
+    }
+    .ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 35%;
+    height: 4px;
+    border-radius: 2px;
+    transform: translate(-6px, 5px) rotateZ(-135deg);
+    transform-origin: 2px 2px;
+    background: #FFFFFF;
+    }
+    .ECM_CheckboxInput-Input:checked + .ECM_CheckboxInput-DummyInput::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: 4px;
+    border-radius: 2px;
+    transform: translate(-6px, 5px) rotateZ(-45deg);
+    transform-origin: 2px 2px;
+    background: #FFFFFF;
+    }
+    .ECM_CheckboxInput-DummyInput {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 32px;
+    height: 32px;
+    border: solid 2px transparent;
+    background: rgba(0, 0, 0, .15);
+    border-radius: 50%;
+    transition: all .15s linear;
+    }
+    .ECM_CheckboxInput-LabelText {
+    margin-left: 12px;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    }
+.item li{
+    line-height: 100px;
+    padding: 0 60px 0 20px;
+}
+.item p{
+    line-height: 100px;
+    padding-right: 40px;
+}
+#edit{
+    padding: 0 20px;
+    height:60px;
+    margin:20px 10px;
+}
+#remove{
+    padding: 0 20px;
+    height:60px;
+    margin:20px 0;
+}
+#accordion_one {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+#accordion_one .item {
+    font-size: 15px;
+    display: flex;
+    height:100px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    z-index: +1;
+    cursor: pointer;
+    transition-duration: 0.2s;
+  }
+#accordion_one .item:hover {
+    opacity: .6;
+    background-color: rgb(246, 239, 230);
+  }
+#accordion_one .item .i_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    margin-top: -20px;
+    box-sizing: border-box;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transform-origin: center center;
+    transition-duration: 0.2s;
+  }
+#accordion_one .item .i_box .one_i {
+    display: block;
+    width: 18px;
+    height: 18px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transform-origin: center center;
+    transition-duration: 0.2s;
+    position: relative;
+  }
+#accordion_one .item.open .i_box {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+#accordion_one .item .i_box .one_i:before, #accordion_one .item .i_box .one_i:after {
+    display: flex;
+    content: '';
+    background-color: #fff;
+    border-radius: 10px;
+    width: 18px;
+    height: 4px;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transform-origin: center center;
+  }
+#accordion_one .item .i_box .one_i:before {
+    width: 4px;
+    height: 18px;
+    top: 0;
+    left: 7px;
+  }
+#accordion_one .item.open .i_box .one_i:before {
+    content: none;
+  }
+#accordion_one .item.open .i_box .one_i:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+#accordion_one .accordion_inner {
+    display: none;
+    padding: 30px 30px;
+    border-left: 2px solid #db0f2f;
+    border-right: 2px solid #db0f2f;
+    border-bottom: 2px solid #db0f2f;
+    box-sizing: border-box;
+  }
+#accordion_one .accordion_inner .box_one {
+    height: 300px;
+  }
+#accordion_one .accordion_inner p.txt_a_ac {
+    margin: 0;
+  }
+  @media screen and (max-width: 1024px) {
+    #accordion_one .item {
+      font-size: 18px;
+    }
+    #accordion_one .item .i_box {
+      width: 30px;
+      height: 30px;
+      margin-top: -15px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    #accordion_one .item {
+      font-size: 16px;
+      text-align: left;
+      padding: 15px 60px 15px 15px;
+    }
+  }
+  
+.active{
+    text-align: right;
+}
+#now{
+    display:flex;
+    justify-content: right;
+}
+
+footer{
+    text-align: center;
+    font-size: 15px;
+    color:#818284;
+}

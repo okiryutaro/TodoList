@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTodoList</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        Todoリスト
+        <p id="now"></p>
+    </header>
+    <main>
+        <input type="text" id="text" placeholder="入力してください">
+        <input type="datetime-local" id="time">
+        <button href="" class="btn btn--red btn--radius btn--cubic" id="add">追加<i class="fas fa-angle-right fa-position-right"></i></button>
+        <ul class="Todo">
+            <p>今日やること</p>
+            <div id="accordion_one">
+                  <div class="i_box"><i class="one_i"></i></div>
+                
+                <div class="accordion_inner">
+                  <div class="box_one">
+                    <!-- <p class="txt_a_ac">アコーディオンの中身です。</p> -->
+                  </div>
+                </div>
+              </div>
+        </ul>
+    </main>
+    <footer>©Oki Ryutaro</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
