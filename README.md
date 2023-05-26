@@ -1,5 +1,6 @@
 # TodoList
 first to do list app
+second to do list app.
 
 Requirements
 -ログイン認証 (data base)
