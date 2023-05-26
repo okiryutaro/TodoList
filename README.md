@@ -17,5 +17,4 @@ functional requirements
     -アカウント作成
 
 -how to start
-
-aaaaaaa
+あああああ
